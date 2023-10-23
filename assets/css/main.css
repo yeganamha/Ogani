@@ -32,6 +32,9 @@ section {
 .header-menu ul li a {
   font-weight: bolder;
 }
+.header-menu ul li a:hover {
+  color: #7FAD39;
+}
 
 .header-menu {
   margin-right: 50px;
@@ -56,7 +59,7 @@ section {
   font-weight: bold;
 }
 
-.icons button {
+.icons a {
   border: none;
   background-color: white;
 }
@@ -67,6 +70,7 @@ section {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  padding: 5px;
 }
 
 .all-departaments-menu {
@@ -95,9 +99,6 @@ section {
 
 .product-search {
   display: flex;
-  border: 1px gray;
-  border-style: ridge;
-  border-right: none;
   width: 100%;
 }
 
@@ -118,8 +119,15 @@ section {
   border: none;
 }
 
+.search-all-products {
+  padding: 10px;
+}
 .search-all-products span {
   padding-left: 20px;
+}
+
+.search-input {
+  padding: 10px;
 }
 
 .search-phone {
@@ -129,6 +137,10 @@ section {
 
 .search-phone-icon i {
   color: #7FAD39;
+}
+
+.search-phone-text {
+  padding: 10px;
 }
 
 .banner-image {
@@ -170,7 +182,7 @@ section {
 
 .next, .previous {
   position: absolute;
-  top: 120%;
+  top: 150%;
   background-color: #7FAD39;
   border: 1px solid gray;
   padding: 9px 14px;
@@ -387,7 +399,7 @@ h6 {
 #organi_shop {
   background-image: url(/assets/images/breadcrumb.jpg.webp);
   width: 100%;
-  height: 20vh;
+  background-repeat: no-repeat;
 }
 
 .shop_text_box h2, .shop_text_box p {
@@ -530,4 +542,13 @@ h4 {
 .list_app_icons i {
   font-size: 24px;
   color: gray;
+}
+
+@media only screen and (max-width: 576px) {
+  .header-menu .header-wish-basket .product-search .all-products .banner-image {
+    display: none;
+  }
+}
+.card-item-image img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
